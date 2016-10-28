@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- META -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>MondayNightPinball - API</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div class="container">
+<h2>Monday Night Pinball API</h2>
+
+<p>
+  It is the intention of the MNP API to allow for the creation and operation
+  of any number of cities, leagues, teams, and players. We'll start the API
+  from the point of view of league administrator, and work our way down
+  to players.
+</p>
+
+<pre>
+<code>
+GETS
+/
+/standings
+/schedule
+/stats
+/rules
+/teams
+/teams/:team_id
+/players
+/players/:key
+/p
+/matches
+/matches/:match_id.json
+/matches/create
+/matches/:match_id/venue
+/matches/:match_id/:side
+/matches/:match_id
+/games/:key.:round.:n
+/pics/:pid
+/login
+/profile
+/forgotpass
+/changepass
+/logout
+/me
+/signup
+/verify/:token
+/createpass
+/welcome
+/venues
+/venues/create
+/venues/:key
+/venues/:key/add
+
+POSTS
+/matches/create
+/matches/:match_id/confirm
+/matches/:match_id/ready
+/matches/:match_id/begin
+/matches/:match_id/draft
+/matches/:match_id/picks
+/matches/:match_id/delete
+/matches/:match_id/venue/add
+/matches/:match_id/venue/remove
+/matches/:match_id/:side
+/matches/:match_id/players/remove
+/matches/:match_id/players/add
+/matches/:match_id/players/join
+/games/:key.:round.:n/report
+/*
+/login
+/changepass
+/signup
+/createpass
+/venues/create
+/venues/:key/add
+
+</code>
+</pre>
+
+<div class="jumbotron">
+
+
+  <table class="table">
+    <tr>
+      <td>Title</td>
+      <td>Example API Method</td>
+    </tr>
+    <tr>
+      <td>URL</td>
+      <td>/example</td>
+    </tr>
+    <tr>
+      <td>Method</td>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <td>Param</td>
+      <td>Required?</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <td>foo</td>
+      <td>YES</td>
+      <td>string</td>
+    </tr>
+  </table>
+</div>
+
+</div> <!-- END Container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+</body>
+</html>
